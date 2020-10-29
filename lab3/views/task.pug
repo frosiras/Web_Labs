@@ -1,0 +1,31 @@
+include head
+include bar
+
+div()
+    a= description
+    br
+    a= example[0]
+    br
+    a= example[1]
+    br
+
+div( style="margin-left: 40%; margin-right: 40%")
+    if task1
+        form( method="GET" action="/task1" )
+            label Input string
+            input(type="text" name="str")
+            input(style="width: 100%" type="Submit" value="Submit")
+    if task2
+        form( method="GET" action="/task2" )
+            label Input string
+            input(type="text" name="str")
+            input(style="width: 100%" type="Submit" value="Submit")
+    if task3
+        form( method="GET" action="/task3" )
+            label Input num
+            input(type="text" name="num")
+            label Input raz
+            input(type="text" name="raz")
+            input(style="width: 100%" type="Submit" value="Submit")
+    if answer
+        a= answer

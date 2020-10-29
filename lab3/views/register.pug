@@ -1,0 +1,10 @@
+include head
+include bar
+div( style="margin-left: 40%; margin-top: 10%; margin-right: 40%")
+    form( method="POST" action="/register" )
+        a= message
+        label Email address
+        input(type="text" name="username")
+        label Password
+        input(type="text" name="password")
+        input(style="width: 100%" type="Submit" value="Submit")
